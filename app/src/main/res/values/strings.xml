@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RealtimeFirebase</string>
+    <string name="login">Login</string>
+    <string name="senha">Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="todo">todo</string>
+    <string name="agenda">Agenda</string>
+    <string name="nome">Nome</string>
+    <string name="phone">Phone</string>
+    <string name="image_from_camera">Imagem da Câmera</string>
+    <string name="take_picture">Tirar Foto</string>
+    <string name="titulo">Titulo</string>
+    <string name="salvar">Salvar</string>
+    <string name="ultimo_volume_lido">Último Volume Lido</string>
+    <string name="completo">Completo</string>
+    <string name="nota">Nota</string>
+    <string name="selecionar">Selecionar</string>
+    <string name="ultimo_comprado">Último Comprado</string>
+    <string name="autor">Autor</string>
+    <string name="genero">Gênero</string>
+    <string name="volume_unico">Volume Único</string>
+    <string name="azul_comprado">Azul = Comprado</string>
+    <string name="verde_lido">Verde = Lido</string>
+    <string name="vermelho_n_o_possui">Vermelho = Não possui</string>
+    <string name="volume">vol</string>
+</resources>

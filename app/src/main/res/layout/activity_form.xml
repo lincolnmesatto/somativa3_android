@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    android:scrollbars="vertical"
+    android:verticalScrollbarPosition="right"
+    tools:context=".controller.FormActivity">
+
+    <Button
+        android:id="@+id/buttonCamera"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#7DC6F6"
+        android:onClick="buttonCameraClicked"
+        android:text="@string/take_picture"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSelecionar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonSelecionar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelecionar" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#7DC6F6"
+        android:onClick="btnSaveClicked"
+        android:text="@string/salvar"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonCamera"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonCamera"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCamera" />
+
+    <Button
+        android:id="@+id/buttonSelecionar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#7DC6F6"
+        android:onClick="btnSaveClicked"
+        android:text="@string/selecionar"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewList"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxCompeleto"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxCompeleto" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCompeleto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#7DC6F6"
+        android:text="@string/completo"
+        app:layout_constraintStart_toStartOf="@+id/editTextGenero"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGenero" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUnico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:buttonTint="#7DC6F6"
+        android:text="@string/volume_unico"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGenero"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGenero" />
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#3498DB"
+        android:ems="10"
+        android:hint="@string/titulo"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColorHint="#7DC6F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUltimo"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3498DB"
+        android:ems="10"
+        android:hint="@string/ultimo_volume_lido"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#7DC6F6"
+        app:layout_constraintStart_toStartOf="@+id/editTextTitulo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitulo" />
+
+    <EditText
+        android:id="@+id/editTextComprado"
+        android:layout_width="170dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#3498DB"
+        android:ems="10"
+        android:hint="@string/ultimo_comprado"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="#7DC6F6"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTitulo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editTextUltimo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitulo" />
+
+    <EditText
+        android:id="@+id/editTextAutor"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:backgroundTint="#3498DB"
+        android:ems="10"
+        android:hint="@string/autor"
+        android:inputType="textPersonName"
+        android:textColorHint="#7DC6F6"
+        app:layout_constraintEnd_toEndOf="@+id/editTextComprado"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextUltimo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUltimo" />
+
+    <EditText
+        android:id="@+id/editTextGenero"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:backgroundTint="#3498DB"
+        android:ems="10"
+        android:hint="@string/genero"
+        android:inputType="textPersonName"
+        android:textColorHint="#7DC6F6"
+        app:layout_constraintEnd_toEndOf="@+id/editTextAutor"
+        app:layout_constraintStart_toStartOf="@+id/editTextAutor"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAutor" />
+
+    <ImageView
+        android:id="@+id/imageViewList"
+        android:layout_width="156dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="20dp"
+        android:background="#7DC6F6"
+        android:contentDescription="@string/image_from_camera"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxUnico"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxUnico"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
